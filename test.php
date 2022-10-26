@@ -7,18 +7,18 @@ function GetVariableFrom ($from,$name,$default="")
     return $from[$name];
 }
 $action=GetVariableFrom($_POST,"action","new");
-$username=GetVariableFrom($_POST,"username","MailApi");
-$password=GetVariableFrom($_POST,"password","redikjer");
+$username=GetVariableFrom($_POST,"username","");
+$password=GetVariableFrom($_POST,"password","");
 $idmail=GetVariableFrom($_POST,"idmail","");
 
-$smtpserver=GetVariableFrom($_POST,"smtpserver","smtp.orange.fr");
+$smtpserver=GetVariableFrom($_POST,"smtpserver","");
 $smtpport=GetVariableFrom($_POST,"smtpport","465");
 $smtpsecure=GetVariableFrom($_POST,"smtpsecure","ssl");
 $smtpauth=GetVariableFrom($_POST,"smtpauth","Y");
-$smtplogin=GetVariableFrom($_POST,"smtplogin","a.c.p.n");
-$smtppass=GetVariableFrom($_POST,"smtppass","Acpn2020");
-$replyto=GetVariableFrom($_POST,"replyto","reply@orange.fr");
-$from=GetVariableFrom($_POST,"from","from@free.fr");
+$smtplogin=GetVariableFrom($_POST,"smtplogin","");
+$smtppass=GetVariableFrom($_POST,"smtppass","");
+$replyto=GetVariableFrom($_POST,"replyto","");
+$from=GetVariableFrom($_POST,"from","");
 $withar=GetVariableFrom($_POST,"withar","N");
 $subject=GetVariableFrom($_POST,"subject","sujet");
 $body=GetVariableFrom($_POST,"body","body");
