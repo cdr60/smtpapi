@@ -1,0 +1,6 @@
+<Files "db.sql">  
+  Require all denied
+</Files>
+<Files "mailapi.db">  
+  Require all denied
+</Files>
